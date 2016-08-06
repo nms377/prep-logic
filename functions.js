@@ -169,18 +169,41 @@ function totalOver30(first, second, third){
 totalOver30(first, second, third);
 console.log(totalOver30(first,second,third));
 
-var third = 35;
+/*var third = 35;
 console.log(totalOver30(first, second, third));
-
+*/
 /*Function - totalUnderWhat
 Write a function that takes four variables of type Number called first and second and third and fourth respectively. Return true if the sum of first, second and third are less than fourth otherwise return false.*/
 
+var fourth = 10;
+
+function totalUnderWhat(){
+  if(first + second + third < fourth){
+    return true;
+  } else {
+    return false;
+  }
+}
+
+totalUnderWhat(first,second,third,fourth);
+console.log(totalUnderWhat(first,second,third,fourth));
+
+var fourth = 0;
+console.log(totalUnderWhat(first,second,third,fourth));
 
 /*Function - looptoNumber
 Write a function that takes in a Number value named limit and have the function write a for loop that loops the number of times of limit and console.log each number as the loop executes.*/
 
+var limit = 5;
 
+function looptoNumber(limit){
+  for (var i=0; i<limit; i++){
+    console.log(limit[i]);
+  }
+}
 
+looptoNumber(limit);
+console.log(looptoNumber(limit));
 /*Function - showEachValue
 Write a function that takes in a Array value named characters that has a sequence of single character String values and have the function write a for loop that loops for each number of elements in the Array and console.log each character as the loop executes.*/
 
