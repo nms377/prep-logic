@@ -226,9 +226,32 @@ function showEachValue(character){
 }
 
 showEachValue(names);
+
 /*Function - createArrayFromString
 Write a function that takes a single variable of type String called word and write a for loop that creates an Array made up of each character in word except for A. We don't want no stinking A in our Array. Note: You will need to use the Array.push() method to complete this function.*/
 
+var word = ["A", "B", "C", "D", "E", "F", "G"]
+
+function createArrayFromString(character){
+	character.shift();
+	for (var i=0; i<character.length; i++){
+		console.log(character[i]);
+	}
+}
+
+createArrayFromString(word);
+
+var word = ["A", "R", "R", "A", "Y"]
+
+function createArrayFromString(character){
+	character.splice(0,1);
+	character.splice(2, 1);
+	for (var i=0; i<character.length; i++){
+		console.log(character[i]);
+	}
+}
+
+createArrayFromString(word);
 
 /*Function - greatSummator
 Write a function that takes an Array with any number of type Number and write a for loop to add all numbers in the Array and return the sum.*/
