@@ -194,20 +194,38 @@ console.log(totalUnderWhat(first,second,third,fourth));
 /*Function - looptoNumber
 Write a function that takes in a Number value named limit and have the function write a for loop that loops the number of times of limit and console.log each number as the loop executes.*/
 
-var limit = 5;
+var num = 5;
 
 function looptoNumber(limit){
-  for (var i=0; i<limit; i++){
+  for (var i=0; i < limit; i++){
     console.log(limit[i]);
   }
 }
 
-looptoNumber(limit);
-console.log(looptoNumber(limit));
+looptoNumber(num);
+
 /*Function - showEachValue
 Write a function that takes in a Array value named characters that has a sequence of single character String values and have the function write a for loop that loops for each number of elements in the Array and console.log each character as the loop executes.*/
 
+var names = ["a", "b", "c", "d"]
 
+function showEachValue(character){
+	for (var i=0; i < character.length; i++){
+		console.log(character[i]);
+	}
+}
+
+showEachValue(names);
+
+var names = ["z", "y", "x", "w"]
+
+function showEachValue(character){
+	for (var i=0; i<character.length; i++){
+		console.log(character[i]);
+	}
+}
+
+showEachValue(names);
 /*Function - createArrayFromString
 Write a function that takes a single variable of type String called word and write a for loop that creates an Array made up of each character in word except for A. We don't want no stinking A in our Array. Note: You will need to use the Array.push() method to complete this function.*/
 
