@@ -51,7 +51,7 @@ function youGetTaco (action){
   return "EAT TACOS";
   }
 }
-youGetTaco();
+youGetTaco("eat");
 console.log(youGetTaco("eat"));
 
 /*Function - isNumberGreaterThan
@@ -64,7 +64,7 @@ function isNumberGreaterThan(first, second){
 
 }
 
-isNumberGreaterThan();
+isNumberGreaterThan(5,1);
 console.log(isNumberGreaterThan(5,1));
 
 /*Function - isTrue
@@ -79,6 +79,7 @@ function isTrue(){
 
 }
 
+isTrue();
 console.log(isTrue());
 
 /*Function - isFalse
@@ -92,15 +93,43 @@ function isFalse(){
   }
 
 }
+
+isFalse();
 console.log(isFalse());
 
 /*Function - isEqual
 Write a function that takes two variables of type String called firstWord and secondWordrespectively. Return 'AWWWWRIGHT' if the two are equal otherwise return 'Y U NO MATCH!'.*/
 
+var firstWord = "Hi";
+var secondWordrespectively = "hI";
+
+function isEqual(firstWord, secondWordrespectively){
+  if(firstWord === secondWordrespectively){
+    return "AWWWWRIGHT";
+  } else {
+    return "Y U NO MATCH!";
+  }
+}
+
+isEqual(firstWord, secondWordrespectively);
+console.log(isEqual(firstWord,secondWordrespectively));
 
 /*Function - isNotEqual
 Write a function that takes two variables of type String called firstWord and secondWordrespectively. Return 'AWWWWRIGHT' if the two are not equal otherwise return 'Y U MATCH!'.*/
 
+function isNotEqual(firstWord, secondWordrespectively){
+  if(firstWord != secondWordrespectively){
+    return 'AWWWWRIGHT';
+  } else {
+    return 'Y U MATCH!';
+  }
+}
+
+isNotEqual(firstWord, secondWordrespectively);
+console.log(isNotEqual(firstWord, secondWordrespectively));
+
+var secondWordrespectively = "Hi";
+console.log(isNotEqual(firstWord, secondWordrespectively));
 
 /*Function - doubleEquals
 Write a function that takes two variables of type Boolean called first and secondrespectively. Return true if both values are true otherwise return false.*/
