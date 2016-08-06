@@ -57,15 +57,42 @@ console.log(youGetTaco("eat"));
 /*Function - isNumberGreaterThan
 Write a function that takes two variables of type Number called first and secondrespectively. Return true if the first number is greater than the second.*/
 
+function isNumberGreaterThan(first, second){
+  if (first>second === true){
+    return true;
+  }
 
+}
+
+isNumberGreaterThan();
+console.log(isNumberGreaterThan(5,1));
 
 /*Function - isTrue
 Write a function that takes in a Boolean value named val and have the function return whether the value is true.*/
 
+var val = 10>5;
+
+function isTrue(){
+  if(val === true){
+    return true;
+  }
+
+}
+
+console.log(isTrue());
+
 /*Function - isFalse
 Write a function that takes in a Boolean value named val and have the function return whether the value is false.*/
 
+var val = 10<5;
 
+function isFalse(){
+  if(val === false){
+    return false;
+  }
+
+}
+console.log(isFalse());
 
 /*Function - isEqual
 Write a function that takes two variables of type String called firstWord and secondWordrespectively. Return 'AWWWWRIGHT' if the two are equal otherwise return 'Y U NO MATCH!'.*/
