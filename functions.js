@@ -134,8 +134,43 @@ console.log(isNotEqual(firstWord, secondWordrespectively));
 /*Function - doubleEquals
 Write a function that takes two variables of type Boolean called first and secondrespectively. Return true if both values are true otherwise return false.*/
 
+var first = "yes";
+var secondrespectively = "yes";
+
+function doubleEquals(first, secondrespectively){
+  if (first === secondrespectively){
+    return true;
+  } else {
+    return false;
+  }
+}
+
+doubleEquals(first, secondrespectively);
+console.log(doubleEquals(first, secondrespectively));
+
+var first = "no";
+console.log(doubleEquals(first, secondrespectively));
+
 /*Function - totalOver30
 Write a function that takes three variables of type Number called first and second and third respectively. Return true if the sum of all values are greater than 30 otherwise return false.*/
+
+var first = 3;
+var second = 2;
+var third = 1;
+
+function totalOver30(first, second, third){
+  if(first + second + third > 30 === true){
+    return true;
+  } else {
+    return false;
+  }
+}
+
+totalOver30(first, second, third);
+console.log(totalOver30(first,second,third));
+
+var third = 35;
+console.log(totalOver30(first, second, third));
 
 /*Function - totalUnderWhat
 Write a function that takes four variables of type Number called first and second and third and fourth respectively. Return true if the sum of first, second and third are less than fourth otherwise return false.*/
