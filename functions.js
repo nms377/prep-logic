@@ -256,6 +256,15 @@ createArrayFromString(word);
 /*Function - greatSummator
 Write a function that takes an Array with any number of type Number and write a for loop to add all numbers in the Array and return the sum.*/
 
+var numbers = [1,2,3,4,5]
+
+function greatSummator(num){
+		for (var i=0; i<num.length; i++){
+		console.log(num[i]);
+	}
+}
+
+greatSummator(numbers);
 
 /*Function - totalUnderWhatFor
 Write a function that takes an Array with any number of type Number and second variable called total. Return true if the sum of all values in the Array are less than total otherwise return false.*/
