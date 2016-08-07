@@ -260,11 +260,12 @@ var numbers = [1,2,3,4,5]
 
 function greatSummator(num){
 		for (var i=0; i<num.length; i++){
-		console.log(num[i]);
+		var arraySum = num[0]+num[1]+num[2]+num[3]+num[4]+num[5];
+		return arraySum;
 	}
 }
 
-greatSummator(numbers);
+greatSummator(numbers[i]);
 
 /*Function - totalUnderWhatFor
 Write a function that takes an Array with any number of type Number and second variable called total. Return true if the sum of all values in the Array are less than total otherwise return false.*/
