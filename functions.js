@@ -46,7 +46,7 @@ Function - youGetTaco
 Write a function that takes a single String parameter called action. If the value passed into our function is eat have the function return the String value EAT TACOS.
 */
 
-function youGetTaco (action){
+/*my work*/function youGetTaco (action){
   if (action === "eat"){
   return "EAT TACOS";
   }
@@ -54,9 +54,19 @@ function youGetTaco (action){
 youGetTaco("eat");
 console.log(youGetTaco("eat"));
 
+/*class work*/
+function youGetTaco(action){
+	if(action=== "eat"){
+		return "EAT TACOS";
+	}
+}
+
+console.log("youGetTaco " + youGetTaco("eat"));
+
 /*Function - isNumberGreaterThan
 Write a function that takes two variables of type Number called first and secondrespectively. Return true if the first number is greater than the second.*/
 
+/*my work*/
 function isNumberGreaterThan(first, second){
   if (first>second === true){
     return true;
@@ -67,12 +77,23 @@ function isNumberGreaterThan(first, second){
 isNumberGreaterThan(5,1);
 console.log(isNumberGreaterThan(5,1));
 
+/*class work*/
+function isNumberGreatThan(first,second){
+	if(first>second === true){
+		return true;
+	}
+}
+
+console.log("isNumberGreaterThan " + isNumberGreaterThan(5,3));
+console.log("isNumberGreaterThan " + isNumberGreaterThan(3,5));
+
 /*Function - isTrue
 Write a function that takes in a Boolean value named val and have the function return whether the value is true.*/
 
+/*my work*/
 var val = 10>5;
 
-function isTrue(){
+function isTrue(val){
   if(val === true){
     return true;
   }
@@ -80,11 +101,20 @@ function isTrue(){
 }
 
 isTrue();
-console.log(isTrue());
+console.log("isTrue " + isTrue());
+
+/*class work*/
+function isTrue(val){
+	if(val>20){
+		return true;
+	}
+}
+console.log("isTrue " + isTrue(21));
 
 /*Function - isFalse
 Write a function that takes in a Boolean value named val and have the function return whether the value is false.*/
 
+/*my work*/
 var val = 10<5;
 
 function isFalse(){
@@ -95,7 +125,16 @@ function isFalse(){
 }
 
 isFalse();
-console.log(isFalse());
+console.log("isFalse " + isFalse());
+
+/*class work*/
+function isFalse(val){
+	if(val<5){
+		return false;
+	}
+}
+
+console.log("isFalse " + isFalse(2));
 
 /*Function - isEqual
 Write a function that takes two variables of type String called firstWord and secondWordrespectively. Return 'AWWWWRIGHT' if the two are equal otherwise return 'Y U NO MATCH!'.*/
@@ -103,6 +142,7 @@ Write a function that takes two variables of type String called firstWord and se
 var firstWord = "Hi";
 var secondWordrespectively = "hI";
 
+/*my work*/
 function isEqual(firstWord, secondWordrespectively){
   if(firstWord === secondWordrespectively){
     return "AWWWWRIGHT";
@@ -112,7 +152,18 @@ function isEqual(firstWord, secondWordrespectively){
 }
 
 isEqual(firstWord, secondWordrespectively);
-console.log(isEqual(firstWord,secondWordrespectively));
+console.log("isEqual " + isEqual(firstWord,secondWordrespectively));
+
+/*class work*/
+function isEqual(firstWord, secondWordrespectively){
+	if(firstWord===secondWordrespectively){
+		return "AWWWWRIGHT";
+	} else{
+		return "Y U NO MATCH";
+	}
+}
+console.log("isEqual "+ isEqual("hi","HO"));
+console.log("isEqual "+ isEqual("hi","hi"));
 
 /*Function - isNotEqual
 Write a function that takes two variables of type String called firstWord and secondWordrespectively. Return 'AWWWWRIGHT' if the two are not equal otherwise return 'Y U MATCH!'.*/
@@ -198,7 +249,7 @@ var num = 5;
 
 function looptoNumber(limit){
   for (var i=0; i < limit; i++){
-    console.log(limit[i]);
+    console.log(limit);
   }
 }
 
@@ -207,7 +258,7 @@ looptoNumber(num);
 /*Function - showEachValue
 Write a function that takes in a Array value named characters that has a sequence of single character String values and have the function write a for loop that loops for each number of elements in the Array and console.log each character as the loop executes.*/
 
-var names = ["a", "b", "c", "d"]
+var names = ["a", "b", "c", "d"];
 
 function showEachValue(character){
 	for (var i=0; i < character.length; i++){
@@ -217,7 +268,7 @@ function showEachValue(character){
 
 showEachValue(names);
 
-var names = ["z", "y", "x", "w"]
+var names = ["z", "y", "x", "w"];
 
 function showEachValue(character){
 	for (var i=0; i<character.length; i++){
@@ -230,18 +281,18 @@ showEachValue(names);
 /*Function - createArrayFromString
 Write a function that takes a single variable of type String called word and write a for loop that creates an Array made up of each character in word except for A. We don't want no stinking A in our Array. Note: You will need to use the Array.push() method to complete this function.*/
 
-var word = ["A", "B", "C", "D", "E", "F", "G"]
+var word = ["A", "B", "C", "D", "E", "F", "G"];
 
 function createArrayFromString(character){
 	character.shift();
 	for (var i=0; i<character.length; i++){
-		console.log(character[i]);
+		console.log(character);
 	}
 }
 
 createArrayFromString(word);
 
-var word = ["A", "R", "R", "A", "Y"]
+var word = ["A", "R", "R", "A", "Y"];
 
 function createArrayFromString(character){
 	character.splice(0,1);
@@ -256,17 +307,17 @@ createArrayFromString(word);
 /*Function - greatSummator
 Write a function that takes an Array with any number of type Number and write a for loop to add all numbers in the Array and return the sum.*/
 
-var numbers = [1,2,3,4,5]
+/*var numbers = [1,2,3,4,5];
 
 function greatSummator(num){
 		for (var i=0; i<num.length; i++){
 		var arraySum = num[0]+num[1]+num[2]+num[3]+num[4]+num[5];
 		return arraySum;
 	}
-}
+}*/
 
-greatSummator(numbers[i]);
-
+/*greatSummator(numbers[i]){}
+*/
 /*Function - totalUnderWhatFor
 Write a function that takes an Array with any number of type Number and second variable called total. Return true if the sum of all values in the Array are less than total otherwise return false.*/
 
