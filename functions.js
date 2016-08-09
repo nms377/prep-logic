@@ -312,7 +312,7 @@ function looptoNumber(limit){
 		console.log(i);
 	}
 }
-console.log("looptoNumber " + looptoNumber(10));
+looptoNumber(10);
 
 /*Function - showEachValue
 Write a function that takes in a Array value named characters that has a sequence of single character String values and have the function write a for loop that loops for each number of elements in the Array and console.log each character as the loop executes.*/
@@ -351,6 +351,7 @@ showEachValue(nameYa);
 /*Function - createArrayFromString
 Write a function that takes a single variable of type String called word and write a for loop that creates an Array made up of each character in word except for A. We don't want no stinking A in our Array. Note: You will need to use the Array.push() method to complete this function.*/
 
+/*my work*/
 var word = ["A", "B", "C", "D", "E", "F", "G"];
 
 function createArrayFromString(character){
@@ -374,20 +375,53 @@ function createArrayFromString(character){
 
 createArrayFromString(word);
 
+/*array.push = adds new item to an array*/
+/*array.pop = removes the last item in an array*/
+/*charAt() method = removes characters in a string based on its index*/
+
+/*class work*/
+
+var quote = "An apple a day, keeps the doc Away";
+function createArrayFromString(word){
+	var newArray = [];
+	for(var i=0; i<word.length; i++){
+		if(word[i].charAt()!== 'A' && word[i].charAt() !== 'a');{}
+		newArray.push(word[i]);
+			}
+			return newArray; 
+
+	}
+
+console.log("createArrayFromString " + createArrayFromString(quote));
+
 /*Function - greatSummator
 Write a function that takes an Array with any number of type Number and write a for loop to add all numbers in the Array and return the sum.*/
 
-/*var numbers = [1,2,3,4,5];
+/*my work*/
+var numbers = [1,2,3,4,5];
 
 function greatSummator(num){
 		for (var i=0; i<num.length; i++){
 		var arraySum = num[0]+num[1]+num[2]+num[3]+num[4]+num[5];
 		return arraySum;
 	}
-}*/
+}
 
-/*greatSummator(numbers[i]){}
-*/
+/*class work*/
+
+var numArray = [1,2,3,4,5];
+
+function greatSummator(arr){
+	var result = 0;
+	for(var i=0; i<arr.length; i++){
+		result +=arr[i]; //result = result + arr[i];
+	}
+	return result;
+}
+
+console.log(greatSummator(numArray));
+
+
 /*Function - totalUnderWhatFor
 Write a function that takes an Array with any number of type Number and second variable called total. Return true if the sum of all values in the Array are less than total otherwise return false.*/
 
