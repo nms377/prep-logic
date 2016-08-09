@@ -168,6 +168,7 @@ console.log("isEqual "+ isEqual("hi","hi"));
 /*Function - isNotEqual
 Write a function that takes two variables of type String called firstWord and secondWordrespectively. Return 'AWWWWRIGHT' if the two are not equal otherwise return 'Y U MATCH!'.*/
 
+/*my work*/
 function isNotEqual(firstWord, secondWordrespectively){
   if(firstWord != secondWordrespectively){
     return 'AWWWWRIGHT';
@@ -177,14 +178,27 @@ function isNotEqual(firstWord, secondWordrespectively){
 }
 
 isNotEqual(firstWord, secondWordrespectively);
-console.log(isNotEqual(firstWord, secondWordrespectively));
+console.log("isNotEqual " + isNotEqual("isNotEqual " + firstWord, secondWordrespectively));
 
 var secondWordrespectively = "Hi";
-console.log(isNotEqual(firstWord, secondWordrespectively));
+console.log(isNotEqual("isNotEqual " + firstWord, secondWordrespectively));
+
+/*class work*/
+function isNotEqual(firstWord, secondWord){
+	if(firstWord !== secondWord){
+		return 'AWWWWRIGHT';
+	} else {
+		return 'Y U MATCH';
+	}
+}
+
+console.log("isNotEqual " + isNotEqual("kitty", "Cat"));
+console.log("isNotEqual " + isNotEqual("Cat", "Cat"));
 
 /*Function - doubleEquals
 Write a function that takes two variables of type Boolean called first and secondrespectively. Return true if both values are true otherwise return false.*/
 
+/*my work*/
 var first = "yes";
 var secondrespectively = "yes";
 
@@ -202,9 +216,20 @@ console.log(doubleEquals(first, secondrespectively));
 var first = "no";
 console.log(doubleEquals(first, secondrespectively));
 
+/*class work*/
+function doubleEquals(first, second){
+	if(first && second === true){
+		return true;
+	} else{
+		return false;
+	}
+}
+console.log("doubleEquals " + doubleEquals(2<1, 3<5));
+
 /*Function - totalOver30
 Write a function that takes three variables of type Number called first and second and third respectively. Return true if the sum of all values are greater than 30 otherwise return false.*/
 
+/*my work*/
 var first = 3;
 var second = 2;
 var third = 1;
@@ -223,9 +248,22 @@ console.log(totalOver30(first,second,third));
 /*var third = 35;
 console.log(totalOver30(first, second, third));
 */
+
+/*class work*/
+function totalOver30 (first, second, third){
+	if(first+second+third > 30){
+		return "Over 30";
+	} else {
+		return "Under 30";
+	}
+}
+
+console.log("totalOver30 " + totalOver30(10,11,12));
+
 /*Function - totalUnderWhat
 Write a function that takes four variables of type Number called first and second and third and fourth respectively. Return true if the sum of first, second and third are less than fourth otherwise return false.*/
 
+/*my work*/
 var fourth = 10;
 
 function totalUnderWhat(){
@@ -242,9 +280,22 @@ console.log(totalUnderWhat(first,second,third,fourth));
 var fourth = 0;
 console.log(totalUnderWhat(first,second,third,fourth));
 
+/*class work*/
+function totalUnderWhat(first, second, third, fourth){
+	if(first + second + third < fourth){
+		return true;
+	} else {
+		return false;
+	}
+}
+
+console.log("totalUnderWhat " + totalUnderWhat(1,2,3,4));
+console.log("totalUnderWhat " + totalUnderWhat(1,2,3,10));
+
 /*Function - looptoNumber
 Write a function that takes in a Number value named limit and have the function write a for loop that loops the number of times of limit and console.log each number as the loop executes.*/
 
+/*my work*/
 var num = 5;
 
 function looptoNumber(limit){
@@ -255,9 +306,18 @@ function looptoNumber(limit){
 
 looptoNumber(num);
 
+/*class work*/
+function looptoNumber(limit){
+	for (var i=0; i< limit; i++){
+		console.log(i);
+	}
+}
+console.log("looptoNumber " + looptoNumber(10));
+
 /*Function - showEachValue
 Write a function that takes in a Array value named characters that has a sequence of single character String values and have the function write a for loop that loops for each number of elements in the Array and console.log each character as the loop executes.*/
 
+/*my work*/
 var names = ["a", "b", "c", "d"];
 
 function showEachValue(character){
@@ -278,6 +338,16 @@ function showEachValue(character){
 
 showEachValue(names);
 
+/*class work*/
+var nameYa = ["Z", "Y", "X", "W"];
+
+function showEachValue(characters){ //takes in array
+	for (var i=0; i<characters.length; i++){
+		console.log(characters[i]);
+	}
+}
+
+showEachValue(nameYa);
 /*Function - createArrayFromString
 Write a function that takes a single variable of type String called word and write a for loop that creates an Array made up of each character in word except for A. We don't want no stinking A in our Array. Note: You will need to use the Array.push() method to complete this function.*/
 
